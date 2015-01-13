@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>link Pub</title>
+
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="this is my page">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../css/default.css">
+<link rel="stylesheet" type="text/css"
+	href="../js/dist/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../css/jquery.fullPage.css">
+
+<!-- <script src="../js/jquery-1.8.3.min.js"></script> -->
+<script src="../js/jquery.js"></script>
+<script src="../js/jquery.easing.min.js"></script>
+<script src="../js/jquery.fullPage.min.js"></script>
+<script src="../js/dist/js/bootstrap.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#fullpage').fullpage({
+			slidesColor : [ '#FFF', '#FFF', '#3b93cf', '#12b98f' ],
+			navigation : true
+		});
+
+	});
+	$(window).resize(function() {
+		autoScrolling();
+	});
+
+	function autoScrolling() {
+		var $height = $(window).height();
+		if ($height < 800) {
+			$.fn.fullpage.setAutoScrolling(false);
+		} else {
+			$.fn.fullpage.setAutoScrolling(true);
+		}
+	}
+</script>
+</head>
+
+<body>
+	<div id="fullpage">
+		<div class="one section">
+			<div class="one_menu">
+				<img src="../image/logo1.png">
+			</div>
+			<div class="one_main">
+				<div class="one_left">
+					<div class="template_left">
+						<p>
+							<span class="title_font"> 最专业的解决方案 </span>
+						</p>
+						<p>
+							<span class="title_font1"> 最专业团队，解决您的烦恼 </span>
+						</p>
+						<p>
+							<button class="btn btn-primary btn-lg btn_size1"
+								data-toggle="modal" data-target="#consult">
+								<span class="title_font2">预约咨询!</span>
+							</button>
+						</p>
+					</div>
+				</div>
+				<div class="one_right">
+					<div class="template_right">
+						<p>
+							<span class="title_font"> If u are talent</span>
+						</p>
+						<p>
+							<span class="title_font1"> If u want to prove himself </span>
+						</p>
+						<p>
+							<button class="btn btn-warning btn-lg btn_size1"
+								data-toggle="modal" data-target="#join">
+								<span class="title_font2">Join us!</span>
+							</button>
+						</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="two section">
+			<div class="two_menu">
+				<img src="../image/logo.png">
+			</div>
+			<div class="two_main">
+				<div class="two_title">
+					<p>
+						<span>Who we are ?</span>
+					</p>
+				</div>
+				<div class="two_content">
+					<p>我们是一个国内IT行业高端人才的线上聚集地，我们有软件开发工程师、架构师、用户体验设计师、产品经理等多个职位的人才在这里展示与证明自己！</p>
+				</div>
+				<div class="show">
+					<ul>
+						<li class="pi_layout"><img class="img-rounded"
+							src="../image/lynk04.jpg" width="100%">
+						</li>
+						<li class="pi_layout"><img class="img-rounded" alt=""
+							src="../image/feng.png" width="100%">
+						</li>
+						<li class="pi_layout"><img class="img-rounded" alt=""
+							src="../image/hd1.png" width="100%">
+						</li>
+						<li class="pi_layout"><img class="img-rounded" alt=""
+							src="../image/hd04.png" width="100%">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="three section">
+			<div class="three_menu">
+				<img src="../image/logo2.png">
+			</div>
+			<div class="three_main">
+				<div class="three_title">
+					<p>
+						<span>What we can do ?</span>
+					</p>
+				</div>
+				<div class="three_content">
+					<p>我们由不同职位的高端人才组成一些小团队，可以快速、有效、专业、低成本的帮助一些创业公司、传统企业等有IT方面技术与设计需求的客户提供解决方案。（解决方案包括但不限于定制系统、网站建设、技术指导、系统部署、项目运营。）</p>
+				</div>
+				<div class="introduce">
+					<div class="thumbnail three_thum">
+						<img class="img-rounded" src="../image/zyjd.png" alt="...">
+						<div class="caption">
+							<h3 class="h3_font">专业解答</h3>
+							<p class="p_font">锦囊妙策&nbsp;&nbsp;终定社稷！</p>
+							<p class="p_font">根据您的idea或您的问题进行全方面剖析，从各个角度进行讲解，分分钟了解问题内幕。</p>
+						</div>
+					</div>
+					<div class="thumbnail three_thum">
+						<img class="img-rounded" src="../image/zhidao.png" alt="...">
+						<div class="caption">
+							<h3 class="h3_font">技术指导</h3>
+							<p class="p_font">依此计行&nbsp;&nbsp;辽东可定！</p>
+							<p class="p_font">根据您存在的技术难题，安排相应领域的专家级人物对您进行指导，快速有效的解决问题并给出深度优化方案。</p>
+						</div>
+					</div>
+					<div class="thumbnail three_thum">
+						<img class="img-rounded" src="../image/fazz.png" alt="...">
+						<div class="caption">
+							<h3 class="h3_font">方案制作</h3>
+							<p class="p_font">奇策在此&nbsp;&nbsp;谁与争锋！</p>
+							<p class="p_font">根据您的需求，量身定制一套新创意、高扩展、高可用、高质量、低成本的解决方案！</p>
+						</div>
+					</div>
+					<div class="thumbnail three_thum">
+						<img class="img-rounded" src="../image/dzkf.png" alt="...">
+						<div class="caption">
+							<h3 class="h3_font">定制开发</h3>
+							<p class="p_font">精兵拒敌&nbsp;&nbsp;策守如山！</p>
+							<p class="p_font">我们追求完美，我们注意细节，我们把控质量，我们讲究时效！</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer section">
+			<div style="margin-top:10%;width:100%;text-align: center;">
+				<span class="title_font3">敬请期待...</span>
+			</div>
+		</div>
+	</div>
+	<!-- Modal join -->
+	<div class="modal fade" id="join" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form role="form">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+						</button>
+						<h4 class="modal-title h4_font" id="myModalLabel">Join us!</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="exampleInputName">Your name</label> <input
+								type="text" class="form-control" id="exampleInputName"
+								placeholder="Enter your name">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputEmail">Email address</label> <input
+								type="email" class="form-control" id="exampleInputEmail"
+								placeholder="Enter email">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputProfession">Your profession</label> <input
+								type="text" class="form-control" id="exampleInputProfession"
+								placeholder="Enter your profession,Multiple positions use '/' divide">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-warning">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- Modal consult -->
+	<div class="modal fade" id="consult" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<form role="form">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+						</button>
+						<h4 class="modal-title h4_font" id="myModalLabel">预约咨询</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="exampleInputName1">姓名</label> <input
+								type="email" class="form-control" id="exampleInputName1"
+								placeholder="如何称呼您？">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputTel">联系方式</label> <input
+								type="text" class="form-control" id="exampleInputTel"
+								placeholder="您的邮件或联系电话">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputConsult">您的需求</label> <textarea
+								type="email" class="form-control" id="exampleInputConsult" rows="5" style="resize: none;"
+								placeholder="简述您的需求，或您想咨询的问题，以便我们进行更有效的沟通"></textarea>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						<button type="button" class="btn btn-primary">提交</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

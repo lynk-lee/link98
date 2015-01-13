@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>index.html</title>
+
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="this is my page">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<link rel="stylesheet" type="text/css" href="css/old.css">
+<link rel="stylesheet" type="text/css" href="js/dist/css/bootstrap.css">
+
+<script src="js/jquery.js"></script>
+<script src="js/dist/js/bootstrap.js"></script>
+
+<script>
+	$(document).ready(function() {
+		$(".index").load('main.html');
+		$(".photo").load('photo.html');
+		$(".music").load('music.html');
+		$(".about").load('about.html');
+		$(".control_show").slideDown(500);
+		var flag = true;
+		$("#ul_tab>li").click(function() {
+			if (flag == true) {
+				flag = false;
+				var thisClass = $(this).data('class');
+				dd = 0;
+				var seti = setInterval(function() {
+					dd += 2;
+					if (dd < 90) {
+						$('#controlBox>.show').css({
+							'transform' : 'rotateY(' + dd + 'deg)',
+						});
+					} else if (dd == 90) {
+						$('#controlBox>.show').removeClass('show');
+						$('#controlBox>.' + thisClass).css({
+							'transform' : 'rotateY(270deg)'
+						}).addClass('show');
+						dd = 270;
+					} else if (dd > 270 && dd < 360) {
+						$('#controlBox>.' + thisClass).css({
+							'transform' : 'rotateY(' + dd + 'deg)'
+						});
+					} else if (dd >= 360) {
+						$('#controlBox>.' + thisClass).css({
+							'transform' : 'rotateY(0deg)'
+						});
+						clearInterval(seti);
+						flag = true;
+					}
+				}, 10);
+			}
+
+		});
+
+		$('#login_btn').click(function() {
+			$(".login_div").load('login.html');
+		});
+	});
+</script>
+</head>
+
+<body>
+	<div class="layout container" style="width: 900px">
+		<div class="boder">
+			<div class="row title_logo divcenter">
+				<a href="#"> <img src="image/lynk.jpg" class="img-circle logo"
+					width="128px" height="128px"> </a>
+			</div>
+			<div class="row divcenter title_name">
+				<a>Everybody's fool</a>
+			</div>
+		</div>
+		<div class="signatureDiv">
+			<p class="signature">All men must die!</p>
+			<ul class="ul_tab" id='ul_tab'>
+				<li class="ul_link indexlab" data-class='index'><a>主页/Main</a></li>
+				<li class="ul_link musiclab" data-class='music'><a>笔记</a></li>
+				<li class="ul_link photolab" data-class='photo'><a>档案</a></li>
+				<li class="ul_link aboutlab" data-class='about'><a>关于/About</a></li>
+			</ul>
+		</div>
+		<div class="control" id="controlBox">
+			<div class="content_layout index show"></div>
+			<div class="content_layout rotate90 music"></div>
+			<div class="content_layout rotate90 photo"></div>
+			<div class="content_layout rotate90 about"></div>
+		</div>
+	</div>
+	<!-- 顶部菜单 -->
+	<div class="menu">
+		<div class="bar">
+			<ul class="control_show">
+				<li id="login_btn" data-toggle="modal" data-target="#myModal">登录</li>
+				<li>注册</li>
+			</ul>
+		</div>
+	</div>
+	<!-- login -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true" style="overflow: hidden; ">
+		<div class="modal-dialog" style="padding-top:15%;width: 440px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+					</button>
+					<h4 class="modal-title" id="myModalLabel"
+						style="font-family: 'Microsoft Yahei';">用户登录</h4>
+				</div>
+				<div class="modal-body login_div" style="padding-bottom: 0px"></div>
+				<div class="modal-footer" style="margin-top: 0px;padding: 15px;">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Login</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
