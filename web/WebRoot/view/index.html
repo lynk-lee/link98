@@ -10,19 +10,21 @@
 <link rel="stylesheet" type="text/css"
 	href="../js/dist/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="../css/jquery.fullPage.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrapValidator.css">
 
 <!-- <script src="../js/jquery-1.8.3.min.js"></script> -->
 <script src="../js/jquery.js"></script>
 <script src="../js/jquery.easing.min.js"></script>
 <script src="../js/jquery.fullPage.min.js"></script>
 <script src="../js/dist/js/bootstrap.js"></script>
+<script src="../js/bootstrapValidator.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
 		$('#fullpage').fullpage({
-			slidesColor : [ '#FFF', '#FFF', '#3b93cf', '#12b98f' ],
+			slidesColor : [ '#e1e1df', '#462f62', '#3b93cf', '#12b98f' ],
 			navigation : true
 		});
-
+		demandValidator();
 	});
 	$(window).resize(function() {
 		autoScrolling();
@@ -30,7 +32,7 @@
 
 	function autoScrolling() {
 		var $height = $(window).height();
-		if ($height < 800) {
+		if ($height < 875) {
 			$.fn.fullpage.setAutoScrolling(false);
 		} else {
 			$.fn.fullpage.setAutoScrolling(true);
@@ -92,22 +94,19 @@
 					</p>
 				</div>
 				<div class="two_content">
-					<p>我们是一个国内IT行业高端人才的线上聚集地，我们有软件开发工程师、架构师、用户体验设计师、产品经理等多个职位的人才在这里展示与证明自己！</p>
+					<p>国内IT行业高端人才的线上聚集地！</p>
+					<p>专业、高效的在线任务团队!</p>
 				</div>
 				<div class="show">
 					<ul>
 						<li class="pi_layout"><img class="img-rounded"
-							src="../image/lynk04.jpg" width="100%">
-						</li>
+							src="../image/lynk04.jpg" width="100%"></li>
 						<li class="pi_layout"><img class="img-rounded" alt=""
-							src="../image/feng.png" width="100%">
-						</li>
+							src="../image/feng.png" width="100%"></li>
 						<li class="pi_layout"><img class="img-rounded" alt=""
-							src="../image/hd1.png" width="100%">
-						</li>
+							src="../image/hd1.png" width="100%"></li>
 						<li class="pi_layout"><img class="img-rounded" alt=""
-							src="../image/hd04.png" width="100%">
-						</li>
+							src="../image/hd04.png" width="100%"></li>
 					</ul>
 				</div>
 			</div>
@@ -123,7 +122,7 @@
 					</p>
 				</div>
 				<div class="three_content">
-					<p>我们由不同职位的高端人才组成一些小团队，可以快速、有效、专业、低成本的帮助一些创业公司、传统企业等有IT方面技术与设计需求的客户提供解决方案。（解决方案包括但不限于定制系统、网站建设、技术指导、系统部署、项目运营。）</p>
+					<p>快速、专业、有效的帮助一些创业公司、传统企业等有IT方面技术与设计需求的客户提供解决方案。（解决方案包括但不限于定制系统、网站建设、技术指导、系统部署、项目运营。）</p>
 				</div>
 				<div class="introduce">
 					<div class="thumbnail three_thum">
@@ -162,8 +161,57 @@
 			</div>
 		</div>
 		<div class="footer section">
-			<div style="margin-top:10%;width:100%;text-align: center;">
-				<span class="title_font3">敬请期待...</span>
+			<div class="footer_menu">
+				<img src="../image/logo3.png">
+			</div>
+			<div class="footer_main">
+				<div class="footer_title">
+					<span class="title_font3">About LinkPub Q&A</span>
+				</div>
+				<div class="one_left">
+					<div class="fromPersonage">
+						<p class="title_font2">from Personage</p>
+					</div>
+					<div class="fromPersonage_main">
+						<p>Q：什么是link酒吧？</p>
+						<p>A：这是一个国内IT行业高端人才的线上聚集地，在线任务团队。</p>
+						<p>&nbsp;</p>
+						<p>Q：我是一名技术人才，如何加入link酒吧？</p>
+						<p>A：通过我们的主页，填写了基本的信息之后，我们会安排相应的人员对您的个人信息，技术能力做一个简单评估，完成之后我们会通知您是否可以加入我们。</p>
+						<p>&nbsp;</p>
+						<p>Q：假如加入了link酒吧，我能得到什么？</p>
+						<p>A：这太多了，首先您能聚集不少人脉，这是很宝贵的，因为我们这里只有顶尖的人才，在您完成一些项目或发表了一些学术研究，若您给我们留下深刻的印象，我们会将您的信息推送到阿里、百度、腾讯等知名公司，让您有一个更广阔的舞台；同时，您的信息将展示在link酒吧网站，也许好的工作找上门来也说不定。</p>
+						<p>&nbsp;</p>
+						<p>Q：加入link酒吧算是一份工作吗？</p>
+						<p>A：不，如果非要这么理解的话，它也许算是一份兼职吧，而且是您自身可控的兼职，想做就做，不想做就不做。</p>
+						<p>&nbsp;</p>
+					</div>
+				</div>
+				<div class="one_right">
+					<div class="fromClient">
+						<p class="title_font2">from Client</p>
+					</div>
+					<div class="fromClient_main">
+						<p>Q：如何与你们展开合作？</p>
+						<p>A：在我们的网站点击开始合作，您首先会阅读完与我们相关的一些信息，确认之后您需要简单描述一下您需要做一个什么东西，然后留下您的联系方式，我们很快会与您进行联系。</p>
+						<p>&nbsp;</p>
+						<p>Q：假如开始合作的话，如何进行项目交付等系列问题？</p>
+						<p>A：首先我们会签合同，我们承诺在多久的时间段之内达到您期望的结果，在合同签署完毕后您需要支付一些定金，当项目完成验收时，支付尾款；同时我们会时刻保持与客户的联系，至于项目部署发布之类的事情，完全不用担心：）</p>
+						<p>&nbsp;</p>
+						<p>Q：如果出现意外，项目没有按期完成怎么办：（</p>
+						<p>A：客户利益至上，我们会退还客户所交定金，同时以link酒吧的名义对对客户进行一些赔偿，诚挚的表达我们的歉意；参与该项目的人员还需要写一份深刻的检讨书，用来反省这个项目失败的原因。</p>
+						<p>&nbsp;</p>
+						<p>Q：你们是一家公司吗？</p>
+						<p>A：不，我们不是。</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer_link">
+				<div class="footer_content">
+					<div class="footer_logo">
+						<img alt="" src="../image/baselogo.png" width="165px">
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -188,7 +236,7 @@
 						<div class="form-group">
 							<label for="exampleInputEmail">Email address</label> <input
 								type="email" class="form-control" id="exampleInputEmail"
-								placeholder="Enter email">
+								placeholder="Enter your email">
 						</div>
 						<div class="form-group">
 							<label for="exampleInputProfession">Your profession</label> <input
@@ -198,7 +246,7 @@
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-warning">Submit</button>
+						<button id="joinSubmit" type="button" class="btn btn-warning">Submit</button>
 					</div>
 				</form>
 			</div>
@@ -208,7 +256,8 @@
 	<div class="modal fade" id="consult" tabindex="-1" role="dialog"
 		aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
-			<form role="form">
+			<form id="demandForm" role="form" method="post"
+				action="../demand.action">
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal">
@@ -218,28 +267,99 @@
 					</div>
 					<div class="modal-body">
 						<div class="form-group">
-							<label for="exampleInputName1">姓名</label> <input
-								type="email" class="form-control" id="exampleInputName1"
-								placeholder="如何称呼您？">
+							<label>姓名</label> <input type="text"
+								class="form-control" name="username" placeholder="如何称呼您？" data-bv-field="username">
 						</div>
 						<div class="form-group">
-							<label for="exampleInputTel">联系方式</label> <input
-								type="text" class="form-control" id="exampleInputTel"
+							<label for="exampleInputTel">联系方式</label> <input type="text"
+								class="form-control" id="exampleInputTel"
 								placeholder="您的邮件或联系电话">
 						</div>
 						<div class="form-group">
-							<label for="exampleInputConsult">您的需求</label> <textarea
-								type="email" class="form-control" id="exampleInputConsult" rows="5" style="resize: none;"
+							<label for="exampleInputConsult">您的需求</label>
+							<textarea type="email" class="form-control"
+								id="exampleInputConsult" rows="5" style="resize: none;"
 								placeholder="简述您的需求，或您想咨询的问题，以便我们进行更有效的沟通"></textarea>
 						</div>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-						<button type="button" class="btn btn-primary">提交</button>
+						<button id="demandSubmit" type="submit" class="btn btn-primary">提交</button>
 					</div>
 				</div>
 			</form>
 		</div>
 	</div>
+	<script>
+		function demandValidator() {
+			$('#demandForm')
+					.bootstrapValidator(
+							{
+								message : 'This value is not valid',
+								feedbackIcons : {
+									valid : 'glyphicon glyphicon-ok',
+									invalid : 'glyphicon glyphicon-remove',
+									validating : 'glyphicon glyphicon-refresh'
+								},
+								fields : {
+									username : {
+										message : '这不是一个真实的姓名',
+										validators : {
+											notEmpty : {
+												message : '姓名不可为空'
+											},
+											stringLength : {
+												min : 2,
+												max : 30,
+												message : 'The username must be more than 6 and less than 30 characters long'
+											},
+											/*remote: {
+											    url: 'remote.php',
+											    message: 'The username is not available'
+											},*/
+											regexp : {
+												regexp : /^([A-Za-z]|[\u4E00-\u9FA5])+$/,
+												message : 'The username can only consist of alphabetical, number, dot and underscore'
+											}
+										}
+									},
+									email : {
+										validators : {
+											notEmpty : {
+												message : 'The email address is required and can\'t be empty'
+											},
+											emailAddress : {
+												message : 'The input is not a valid email address'
+											}
+										}
+									},
+									password : {
+										validators : {
+											notEmpty : {
+												message : 'The password is required and can\'t be empty'
+											}
+										}
+									}
+								}
+							}).on(
+							'success.form.bv',
+							function(e) {
+								// Prevent form submission
+								e.preventDefault();
+
+								// Get the form instance
+								var $form = $(e.target);
+
+								// Get the BootstrapValidator instance
+								var bv = $form.data('bootstrapValidator');
+
+								// Use Ajax to submit form data
+								$.post($form.attr('action'), $form.serialize(),
+										function(result) {
+											console.log(result);
+										}, 'json');
+							});
+		}
+	</script>
 </body>
 </html>

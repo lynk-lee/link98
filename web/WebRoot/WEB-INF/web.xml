@@ -29,7 +29,7 @@
 
 	<servlet-mapping>
 		<servlet-name>mvc</servlet-name>
-		<url-pattern>/</url-pattern>
+		<url-pattern>*.action</url-pattern>
 	</servlet-mapping>
 
 	<!-- 激活Tomcat的defaultServlet来处理静态文件 -->

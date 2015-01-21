@@ -3,13 +3,12 @@ body { /* background:	no-repeat top center;*/
 	height: 2895px;
 }
 
-.one {
-	background: url('../image/bg02.png') fixed 0;
+.one { /*background: url('../image/bg02.png') fixed 0;*/
 	height: 965px;
 }
 
-.two {
-	background: url('../image/bg01.png') fixed 0;
+.two { /*background: url('../image/bg01.png') fixed 0;*/
+	
 }
 
 .two_menu {
@@ -92,7 +91,45 @@ body { /* background:	no-repeat top center;*/
 .footer {
 	
 }
-
+.footer_main{
+	width:1080px;
+	margin: 0px auto;
+}
+.footer_title{
+	text-align: center;
+	margin-bottom: 15px;
+}
+.footer_link {
+	width: 100%;
+	height: 165px;
+	min-width: 1080px;
+	background-color: #000;
+	float: left;
+	margin-top:60px;
+	margin-bottom: 0;
+	/* filter: alpha(opacity = 50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5; */
+	background:rgba(0,0,0,0.6) none repeat scroll !important; 
+}
+.footer_content{
+	width:1080px;
+	height:165px;
+	margin: 0 auto;
+}
+.footer_logo{
+	width:165px;
+	height:165px;
+}
+.fromPersonage,.fromClient{
+	text-align: center;
+}
+.fromPersonage_main,.fromClient_main{
+	height:480px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
 ul {
 	padding: 0;
 }
@@ -129,6 +166,11 @@ ul li {
 /* 效果相关 */
 
 /* 字体相关 */
+.fromPersonage_main,.fromClient_main p{
+	color: #FFF;
+	font-family: "Microsoft Yahei";
+	font-size: 14px;
+}
 .title_font {
 	color: #000;
 	font-family: "Microsoft Yahei";
@@ -156,7 +198,7 @@ ul li {
 .title_font3 {
 	color: #FFF;
 	font-family: "Microsoft Yahei";
-	font-size: 70px;
+	font-size: 35px;
 	text-shadow: 0 0 10px #FFF;
 	transition: all .5s ease;
 }
@@ -177,7 +219,8 @@ ul li {
 	text-shadow: 0 0 10px #9d9d9d;
 	transition: all .5s ease;
 }
-.p_font{
+
+.p_font {
 	color: #000;
 	font-family: "Microsoft Yahei";
 	font-size: 15px;
@@ -191,8 +234,10 @@ ul li {
 	margin-top: 30px;
 }
 /* 布局样式 */
-.margin1{
+.margin1 {
+	
 }
+
 .layout {
 	margin: 0 auto;
 	width: 1200px;
@@ -277,6 +322,7 @@ input:-ms-input-placeholder {
 	color: #666 !important; /* Internet Explorer 10+ */
 	font-family: "Microsoft Yahei";
 }
+
 textarea::-webkit-input-placeholder {
 	color: #666 !important; /* WebKit browsers */
 	font-family: "Microsoft Yahei";

@@ -7,19 +7,21 @@
 <meta http-equiv="description" content="this is my page">
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-<link rel="stylesheet" type="text/css" href="css/old.css">
+<link rel="stylesheet" type="text/css" href="css/blogs.css">
 <link rel="stylesheet" type="text/css" href="js/dist/css/bootstrap.css">
 
 <script src="js/jquery.js"></script>
 <script src="js/dist/js/bootstrap.js"></script>
+<script src="js/scrollReveal.js"></script>
 
 <script>
 	$(document).ready(function() {
 		$(".index").load('main.html');
-		$(".photo").load('photo.html');
-		$(".music").load('music.html');
 		$(".about").load('about.html');
+		$(".photo").load('photo.html');
 		$(".control_show").slideDown(500);
+
+		//以下代码是旋转特效
 		var flag = true;
 		$("#ul_tab>li").click(function() {
 			if (flag == true) {
@@ -53,9 +55,13 @@
 			}
 
 		});
-
-		$('#login_btn').click(function() {
-			$(".login_div").load('login.html');
+		//注册警告
+		$("#register_btn").click(function() {
+			$("#registerModal").show();
+		});
+		//用户登录
+		$("#login_btn").click(function() {
+			$("#loginModal").show();
 		});
 	});
 </script>
@@ -65,25 +71,26 @@
 	<div class="layout container" style="width: 900px">
 		<div class="boder">
 			<div class="row title_logo divcenter">
-				<a href="#"> <img src="image/lynk.jpg" class="img-circle logo"
+				<a href="#"> <img src="image/hd04.png" class="img-circle logo"
 					width="128px" height="128px"> </a>
 			</div>
 			<div class="row divcenter title_name">
-				<a>Everybody's fool</a>
+				<a>Lynk-Lee</a>
 			</div>
 		</div>
 		<div class="signatureDiv">
-			<p class="signature">All men must die!</p>
+			<p class="signature">星沉月落夜闻香,素手出锋芒...</p>
 			<ul class="ul_tab" id='ul_tab'>
-				<li class="ul_link indexlab" data-class='index'><a>主页/Main</a></li>
-				<li class="ul_link musiclab" data-class='music'><a>笔记</a></li>
-				<li class="ul_link photolab" data-class='photo'><a>档案</a></li>
-				<li class="ul_link aboutlab" data-class='about'><a>关于/About</a></li>
+				<li class="ul_link indexlab" data-class='index'><a>主页/Main</a>
+				</li>
+				<li class="ul_link photolab" data-class='photo'><a>照片/Photo</a>
+				</li>
+				<li class="ul_link aboutlab" data-class='about'><a>关于/About</a>
+				</li>
 			</ul>
 		</div>
 		<div class="control" id="controlBox">
 			<div class="content_layout index show"></div>
-			<div class="content_layout rotate90 music"></div>
 			<div class="content_layout rotate90 photo"></div>
 			<div class="content_layout rotate90 about"></div>
 		</div>
@@ -92,14 +99,16 @@
 	<div class="menu">
 		<div class="bar">
 			<ul class="control_show">
-				<li id="login_btn" data-toggle="modal" data-target="#myModal">登录</li>
-				<li>注册</li>
+				<li id="login_btn" data-toggle="modal" data-target="#loginModal">登录</li>
+				<li id="register_btn" data-toggle="modal"
+					data-target="#registerModal">注册</li>
 			</ul>
 		</div>
 	</div>
 	<!-- login -->
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
-		aria-labelledby="myModalLabel" aria-hidden="true" style="overflow: hidden; ">
+	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true"
+		style="overflow: hidden; ">
 		<div class="modal-dialog" style="padding-top:15%;width: 440px;">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -109,10 +118,43 @@
 					<h4 class="modal-title" id="myModalLabel"
 						style="font-family: 'Microsoft Yahei';">用户登录</h4>
 				</div>
-				<div class="modal-body login_div" style="padding-bottom: 0px"></div>
+				<div class="modal-body login_div" style="padding-bottom: 0px">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-12" style="border: none; ">
+								<form role="form">
+									<div class="form-group">
+										<input type="text" autofocus="autofocus" class="form-control"
+											placeholder="您的用户名">
+									</div>
+									<div class="form-group">
+										<input type="password" class="form-control" placeholder="密码"
+											jx-model="datas.pwd" validator="required:请输入密码;">
+										<div class="forgetPwd">
+											<a id="forgetPwd">忘记密码?</a>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="modal-footer" style="margin-top: 0px;padding: 15px;">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 					<button type="button" class="btn btn-primary">Login</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- register -->
+	<div class="modal fade" id="registerModal" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true"
+		style="overflow: hidden; ">
+		<div class="modal-dialog" style="padding-top:15%;width: 440px;">
+			<div class="modal-content">
+				<div class="alert alert-warning" style="margin: 0;">
+					</a> <strong>提示！</strong>注册功能暂未开通！
 				</div>
 			</div>
 		</div>

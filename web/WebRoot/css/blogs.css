@@ -1,0 +1,275 @@
+body {
+	background:#15171b;
+	/* background:	no-repeat top center;*/
+}
+
+ul {
+	padding: 0;
+}
+
+ul li {
+	list-style-type: none;
+	display: inline-block;
+}
+
+.ul_link {
+	margin: 4px 10px;
+	color: white;
+	width: 100px;
+	vertical-align: middle;
+}
+
+.ul_link a {
+	font-size: 14px;
+	color: #419ce7;
+	font-family: "Microsoft Yahei";
+	transition: all .3s ease;
+	display: block;
+	height:18px;
+}
+
+.ul_link a:hover {
+	font-size: 14px;
+	color: #419ce7;
+	font-family: "Microsoft Yahei";
+	text-decoration: none;
+	cursor: pointer;
+	text-shadow: 0 0 25px #419ce7;
+}
+
+.index,.music,.photo,.about {
+	display: none;
+	top: 0;
+	left: 0;
+}
+.show {
+	display: block !important;
+}
+
+.rotate90 {
+	-webkit-transform: rotateY(90deg);
+}
+
+/* 布局宽度 */
+.layout {
+	padding-top: 70px;
+	position: relative;
+}
+/* .layout:before{
+	content:'' ;
+	display:block !important;
+	z-index:1;
+	position:absolute ;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	background: url("../image/4.jpg")  ;
+	opacity:0.8;
+} */
+/* div居中 */
+.divcenter {
+	text-align: center;
+}
+
+.boder {
+	border: 4px double #ccc;
+	border-left: none;
+	border-right: none;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.title_logo {
+	padding-bottom: 10px;
+}
+
+.title_logo img {
+	transition: all .5s ease;
+	box-shadow: 0 0 15px rgba(255, 255, 255, 0.75);
+}
+.title_logo img:hover {
+	box-shadow: 0 0 50px rgba(255, 255, 255, 0.75);
+	cursor: pointer;
+}
+
+.logo {
+	border: 8px solid rgba(0, 0, 0, 0.3);
+}
+
+.title_name {
+	padding-bottom: 10px;
+}
+
+.title_name a {
+	font-size: 28px;
+	color: white;
+	font-family: "Microsoft Yahei";
+	text-shadow: 0 0 10px #fff;
+	transition: all .5s ease;
+}
+
+.title_name a:hover {
+	font-size: 28px;
+	color: white;
+	font-family: "Microsoft Yahei";
+	text-decoration: none;
+	cursor: pointer;
+	text-shadow: 0 0 30px #fff;
+}
+
+.signatureDiv {
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 20px;
+}
+
+.signature {
+	font-size: 16px;
+	color: #888;
+	font-family: "Microsoft Yahei";
+}
+
+.ul_tab {
+	margin-top: 20px;
+	height: 32px;
+}
+
+.row_content {
+	border-top: 1px dotted #ccc;
+	padding-top: 50px;
+}
+
+.content_title span{
+	width: 100%;
+	font-size: 20px;
+	color: white;
+	font-family: "Microsoft Yahei";
+	text-shadow: 0 0 10px #fff;
+	transition: all .3s ease;
+}
+.content_title span:hover{
+	width: 100%;
+	font-size: 20px;
+	color: white;
+	font-family: "Microsoft Yahei";
+	text-shadow: 0 0 30px #fff;
+	cursor: pointer;
+	transition: all .3s ease;
+}
+
+.content {
+	width: 100%;
+	padding-top: 15px;
+}
+.left,.right{
+	width:50%;
+	float: left;
+}
+
+.content p {
+	color: #a7aeaf;
+	font-family: "Microsoft Yahei";
+	font-size: 14px;
+	padding-bottom: 15px;
+}
+
+.content img {
+	max-width: 870px;
+	border: 8px solid rgba(0, 0, 0, 0.3);
+	transition: all .3s ease;
+}
+
+.content img:hover {
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.75);
+	transition: all .3s ease;
+}
+
+.content a:hover {
+	cursor: pointer;
+	transition: all .3s ease;
+}
+
+.content_bottom {
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+
+.content_bottom  a {
+	font-size: 12px;
+	color: white;
+	font-family: "Microsoft Yahei";
+}
+
+.content_bottom a:hover {
+	font-size: 12px;
+	color: white;
+	font-family: "Microsoft Yahei";
+	text-decoration: none;
+	cursor: pointer;
+	text-shadow: 0 0 10px #fff;
+}
+
+.photoLayout {
+	padding-bottom: 30px;
+}
+
+.photoLayout a {
+	display: block;
+}
+
+/* 顶部菜单 */
+.menu {
+	width: 200px;
+	height: 50px;
+	top: 0;
+	right: 0;
+	overflow: auto;
+	position: fixed;
+	text-align: center;
+}
+
+.bar {
+	width: 100%;
+	margin-top: 9px;
+	color: #fff;
+	font-family: "Microsoft Yahei";
+	transition: all .5s ease;
+}
+
+.bar ul {
+	display: none;
+}
+
+.bar ul li {
+	width: 75px;
+	padding: 2px 0px;
+	margin: 0px;
+	margin-right: 10px;
+	transition: all .5s ease;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.bar ul li:hover {
+	width: 75px;
+	background-color: #000;
+	text-shadow: 0 0 10px #fff;
+	cursor: pointer;
+	padding: 2px 0px;
+	margin: 0px;
+	margin-right: 10px;
+	box-shadow: 0 0 20px rgba(255, 255, 255, 0.75);
+}
+.forgetPwd {
+	float: right;
+	font-size: 9px;
+	color: #ccc;
+	cursor: pointer
+}
+/* photo.html页面特效 */
+.list { width: 100%; margin: 0 auto; overflow: hidden; zoom: 1;}
+.list ul { float: left; width: 197px; margin: 0 10px; list-style-type: none;}
+.list li { margin-bottom: 10px;margin-top: 10px;}
+.list img { width: 100%; border-radius: 5px; vertical-align:}
+.list img:hover  { width: 100%; border-radius: 5px; vertical-align: top;cursor: pointer;box-shadow: 0 0 20px rgba(255, 0, 255, 0.95);}

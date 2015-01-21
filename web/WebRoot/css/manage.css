@@ -1,0 +1,132 @@
+.m-nav {
+	margin-top: 50px;
+	width: 100%;
+	height: 250px;
+	width: 100%;
+}
+
+.m-nav ul {
+	margin: 0px auto;
+	padding: 0;
+}
+
+.m-nav ul li {
+	list-style-type: none;
+	display: inline-block;
+	float: left;
+	padding: 0;
+}
+
+.m-nav li {
+	width: 248px;
+	height: 248px;
+	text-align: center;
+}
+
+.m-nav li:HOVER {
+	text-align: center;
+	cursor: pointer;
+	background-color: #eee;
+	font-family: "Microsoft Yahei";
+	text-decoration: none;
+	text-shadow: 0 0 25px #ffffbb;
+	box-shadow: 0 0 50px rgba(255, 255, 255, 0.75);
+}
+
+.m-diary,.m-photo,.m-essay {
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	background-color: #FFF;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	display: none;
+	z-index:1002;
+	position:relative;
+}
+
+.m-diary-layout,.m-photo-layout,.m-essay-layout {
+	padding: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.m-photo-add {
+	margin: 0 auto;
+	width: 498px;
+	height: 310px;
+	border: 1px dashed #ccc;
+}
+
+#selImg{
+	margin: 0 auto;
+	margin-top: 22%;
+	width: 100px;
+	height: 80px;
+	text-align: center;
+	color: #ccc;
+	cursor: pointer;
+}
+
+.icon-font-div {
+	margin-top: 50px;
+	width: 100%;
+	float: left;
+}
+
+.icon-font {
+	text-align: center;
+	font-size: 120px;
+}
+
+.icon-font1 {
+	text-align: center;
+	font-size: 60px;
+}
+
+.label-font {
+	text-align: center;
+	font-size: 30px;
+}
+
+.label-font1 {
+	text-align: center;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.div-btn-class0 {
+	text-align: right;
+}
+.div-btn-class1 {
+	padding-top: 24px;
+	padding-left: 24px;
+	text-align: center;
+}
+
+.btn-class1 {
+	width: 100px;
+	font-family: "Microsoft Yahei";
+}
+
+.btn-class2 {
+	width: 100px;
+	font-family: "Microsoft Yahei";
+}
+
+.cover {
+	display: none;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+	z-index: 1001;
+	-moz-opacity: 0.7;
+	opacity: .70;
+	filter: alpha(opacity = 70);
+	z-index:900; position:fixed!important; position:absolute;
+}
+.fileList{
+	width: 100%;
+}
